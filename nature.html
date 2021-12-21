@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <title>MB - Nature</title>
+</head>
+
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header id="Banner">
+        <h1><a href="Photofolio.html">Mark.Best.Photography</a></h1>
+
+        <nav class="mobileNav">
+            <ul>
+                <li><a href="Photofolio.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu hidden"><img src="Social_Icons/menu.png" alt=""></div>
+    </header>
+
+
+    <main class="onLoad">
+        <button class="previous hidden" id="back">
+            < </button>
+                <div class="carousel">
+                    <div class="images">
+                        <img
+                            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/96f4908b-f839-46eb-8a75-80e90ed74142/d1pp1pm-0d7179ce-17ae-415b-9abe-07dd45152d53.jpg/v1/fill/w_900,h_600,q_75,strp/colours_of_autumn_by_mark1624_d1pp1pm-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjAwIiwicGF0aCI6IlwvZlwvOTZmNDkwOGItZjgzOS00NmViLThhNzUtODBlOTBlZDc0MTQyXC9kMXBwMXBtLTBkNzE3OWNlLTE3YWUtNDE1Yi05YWJlLTA3ZGQ0NTE1MmQ1My5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.YAyxCN6Y3jqlUHwCepGL_OxuPNChGqk7U3rN91JXFow">
+                        <img
+                            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/96f4908b-f839-46eb-8a75-80e90ed74142/d2vj6c3-30e11b1d-42df-4540-bbbe-e5663db71c90.jpg/v1/fill/w_900,h_600,q_75,strp/lines_of_lights_by_mark1624_d2vj6c3-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjAwIiwicGF0aCI6IlwvZlwvOTZmNDkwOGItZjgzOS00NmViLThhNzUtODBlOTBlZDc0MTQyXC9kMnZqNmMzLTMwZTExYjFkLTQyZGYtNDU0MC1iYmJlLWU1NjYzZGI3MWM5MC5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.4ALymAcICLAlWiFNkUbN0yaOLZe4OX212rMcOlgcVPs">
+                        <img class="square"
+                            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/96f4908b-f839-46eb-8a75-80e90ed74142/d2ym389-c6d3a140-b70c-4fd4-ac37-93968fac5d89.jpg/v1/fill/w_900,h_900,q_75,strp/i_give_you____life_by_mark1624_d2ym389-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAwIiwicGF0aCI6IlwvZlwvOTZmNDkwOGItZjgzOS00NmViLThhNzUtODBlOTBlZDc0MTQyXC9kMnltMzg5LWM2ZDNhMTQwLWI3MGMtNGZkNC1hYzM3LTkzOTY4ZmFjNWQ4OS5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.r23dVnoDszvUJsNK2nowASxGyMrhoVY32ptnDt5_Y1s">
+                        <img class="portrait"
+                            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/96f4908b-f839-46eb-8a75-80e90ed74142/d2vqmfd-e2268c2f-49c4-4399-99f0-241b76729c22.jpg/v1/fill/w_600,h_877,q_75,strp/faces_of_history_by_mark1624_d2vqmfd-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODc3IiwicGF0aCI6IlwvZlwvOTZmNDkwOGItZjgzOS00NmViLThhNzUtODBlOTBlZDc0MTQyXC9kMnZxbWZkLWUyMjY4YzJmLTQ5YzQtNDM5OS05OWYwLTI0MWI3NjcyOWMyMi5qcGciLCJ3aWR0aCI6Ijw9NjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.BgN9iCK4yWVROpm_DMIGWIojHaJhv6xqljVxEtKHK0M">
+                    </div>
+                </div>
+                <button class="forward" id="next">></button>
+    </main>
+
+
+    <footer class="loadUp">
+        <hr>
+        <div class="socials">
+            <img class="facebook" title="Facebook account not linked" src="Social_Icons/Facebook.png" alt="Facebook">
+            <a href="https://www.instagram.com/smile_youve_won/?hl=en" target="_blank" rel="noopener noreferrer"><img
+                    class="instagram" src="Social_Icons/Instagram.png" alt="Instagram"></a>
+            <img class="twitter" title="Twitter account not linked" src="Social_Icons/Twitter.png" alt="Twitter">
+        </div>
+        <div>
+            <p>Designed & Created by Mark.Best &copy;</p>
+        </div>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+
+</html>

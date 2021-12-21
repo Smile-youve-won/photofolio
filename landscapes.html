@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <title>MB - Landcapes</title>
+</head>
+
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header id="Banner">
+        <h1><a href="Photofolio.html">Mark.Best.Photography</a></h1>
+
+        <nav class="mobileNav">
+            <ul>
+                <li><a href="Photofolio.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu hidden"><img src="Social_Icons/menu.png" alt=""></div>
+    </header>
+
+
+    <main class="onLoad">
+        <button class="previous hidden" id="back">
+            < </button>
+                <div class="carousel">
+                    <div class="images">
+                        <img
+                            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/96f4908b-f839-46eb-8a75-80e90ed74142/d1icj12-7a6a6cea-b6a7-48d8-bc72-841bf8dd9dda.jpg/v1/fill/w_900,h_600,q_75,strp/cirque_du_soleil_by_kayak_by_mark1624_d1icj12-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjAwIiwicGF0aCI6IlwvZlwvOTZmNDkwOGItZjgzOS00NmViLThhNzUtODBlOTBlZDc0MTQyXC9kMWljajEyLTdhNmE2Y2VhLWI2YTctNDhkOC1iYzcyLTg0MWJmOGRkOWRkYS5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.yLzINNtPoSLKR3Y8ro98pZXTXTwAoEO3YrT59ixcMn8">
+                        <img
+                            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/96f4908b-f839-46eb-8a75-80e90ed74142/d18j524-eb491f4d-ecd2-4e55-aec8-e8675abb2333.jpg/v1/fill/w_900,h_604,q_75,strp/is_this_thing_safe__by_mark1624_d18j524-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjA0IiwicGF0aCI6IlwvZlwvOTZmNDkwOGItZjgzOS00NmViLThhNzUtODBlOTBlZDc0MTQyXC9kMThqNTI0LWViNDkxZjRkLWVjZDItNGU1NS1hZWM4LWU4Njc1YWJiMjMzMy5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.R0OxFmcpQ2vcV5EozniNdiUBF4iALESrNqlI5Roqqs4">
+                        <img
+                            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/96f4908b-f839-46eb-8a75-80e90ed74142/d7jc5ui-2d60b669-19b1-4afd-b37f-e743cc23f823.jpg/v1/fill/w_1280,h_854,q_75,strp/golden_canyon_by_mark1624_d7jc5ui-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvOTZmNDkwOGItZjgzOS00NmViLThhNzUtODBlOTBlZDc0MTQyXC9kN2pjNXVpLTJkNjBiNjY5LTE5YjEtNGFmZC1iMzdmLWU3NDNjYzIzZjgyMy5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.v6MR2LxlXtZlq9eeMFcK3dXtv_5YOPQgrCWOv4OYqLM">
+                        <img
+                            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/96f4908b-f839-46eb-8a75-80e90ed74142/d7p3auu-66855447-2432-4365-bb72-0660f3ec8577.jpg/v1/fill/w_1024,h_683,q_75,strp/st__pauls_cathedral_by_mark1624_d7p3auu-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjgzIiwicGF0aCI6IlwvZlwvOTZmNDkwOGItZjgzOS00NmViLThhNzUtODBlOTBlZDc0MTQyXC9kN3AzYXV1LTY2ODU1NDQ3LTI0MzItNDM2NS1iYjcyLTA2NjBmM2VjODU3Ny5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.4JJLqWDIU2QLFxTClimONbi7S96S_4277vv3oxDm3N0">
+                        <img
+                            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/96f4908b-f839-46eb-8a75-80e90ed74142/d2hdd9j-ce2c5d84-308a-4c27-8e92-3e7154229dfd.jpg/v1/fill/w_900,h_600,q_75,strp/learn_to_fly_by_mark1624_d2hdd9j-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjAwIiwicGF0aCI6IlwvZlwvOTZmNDkwOGItZjgzOS00NmViLThhNzUtODBlOTBlZDc0MTQyXC9kMmhkZDlqLWNlMmM1ZDg0LTMwOGEtNGMyNy04ZTkyLTNlNzE1NDIyOWRmZC5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.Vf8g0BiRzxiPHncIN843PDp-xt_HjagUWpcJXR3E1Eg">
+                    </div>
+                </div>
+                <button class="forward" id="next">></button>
+    </main>
+
+
+    <footer class="loadUp">
+        <hr>
+        <div class="socials">
+            <img class="facebook" title="Facebook account not linked" src="Social_Icons/Facebook.png" alt="Facebook">
+            <a href="https://www.instagram.com/smile_youve_won/?hl=en" target="_blank" rel="noopener noreferrer"><img
+                    class="instagram" src="Social_Icons/Instagram.png" alt="Instagram"></a>
+            <img class="twitter" title="Twitter account not linked" src="Social_Icons/Twitter.png" alt="Twitter">
+        </div>
+        <div>
+            <p>Designed & Created by Mark.Best &copy;</p>
+        </div>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+
+</html>

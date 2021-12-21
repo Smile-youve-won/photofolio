@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <title>MB - Wildlife</title>
+</head>
+
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header id="Banner">
+        <h1><a href="Photofolio.html">Mark.Best.Photography</a></h1>
+
+        <nav class="mobileNav">
+            <ul>
+                <li><a href="Photofolio.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu hidden"><img src="Social_Icons/menu.png" alt=""></div>
+    </header>
+
+
+    <main class="onLoad">
+        <button class="previous hidden" id="back">
+            < </button>
+                <div class="carousel">
+                    <div class="images">
+                        <img
+                            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/96f4908b-f839-46eb-8a75-80e90ed74142/d1v4uxr-73f1b25a-9e80-4709-84cf-261986821fdf.jpg/v1/fill/w_900,h_602,q_75,strp/green_with_envy_by_mark1624_d1v4uxr-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjAyIiwicGF0aCI6IlwvZlwvOTZmNDkwOGItZjgzOS00NmViLThhNzUtODBlOTBlZDc0MTQyXC9kMXY0dXhyLTczZjFiMjVhLTllODAtNDcwOS04NGNmLTI2MTk4NjgyMWZkZi5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.s36s18c3p0VxOprGPDJoJoknvJ0m2MRUD-qjQFPUwT8">
+                        <img
+                            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/96f4908b-f839-46eb-8a75-80e90ed74142/d2nf0vy-f44a68ba-7255-449e-bb47-61b19c8a94c4.jpg/v1/fill/w_900,h_600,q_75,strp/yellow_eyes_by_mark1624_d2nf0vy-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjAwIiwicGF0aCI6IlwvZlwvOTZmNDkwOGItZjgzOS00NmViLThhNzUtODBlOTBlZDc0MTQyXC9kMm5mMHZ5LWY0NGE2OGJhLTcyNTUtNDQ5ZS1iYjQ3LTYxYjE5YzhhOTRjNC5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.apQkfDWLqTOctcXMrPGsxt9OAl6OA9OYVG_k63GyLGM">
+                        <img
+                            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/96f4908b-f839-46eb-8a75-80e90ed74142/d1jz7mk-44d26738-5be2-4889-ad1e-74fe2e8646c3.jpg/v1/fill/w_900,h_600,q_75,strp/the_fisherman_by_mark1624_d1jz7mk-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjAwIiwicGF0aCI6IlwvZlwvOTZmNDkwOGItZjgzOS00NmViLThhNzUtODBlOTBlZDc0MTQyXC9kMWp6N21rLTQ0ZDI2NzM4LTViZTItNDg4OS1hZDFlLTc0ZmUyZTg2NDZjMy5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.9FvyA1nGcTyirk-jgJ1vy3NIdHgQSEwtbmeI01FClbE">
+                        <img
+                            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/96f4908b-f839-46eb-8a75-80e90ed74142/d1jz661-e267d60d-c4e3-46a8-8bf8-e6d0fc41be23.jpg/v1/fill/w_900,h_600,q_75,strp/composed_by_mark1624_d1jz661-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjAwIiwicGF0aCI6IlwvZlwvOTZmNDkwOGItZjgzOS00NmViLThhNzUtODBlOTBlZDc0MTQyXC9kMWp6NjYxLWUyNjdkNjBkLWM0ZTMtNDZhOC04YmY4LWU2ZDBmYzQxYmUyMy5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.FLUnC_XQNo1HZNYdQZusKxZa5Zc4R8qPMvvo3fkViz4">
+                    </div>
+                </div>
+                <button class="forward" id="next">></button>
+    </main>
+
+
+    <footer class="loadUp">
+        <hr>
+        <div class="socials">
+            <img class="facebook" title="Facebook account not linked" src="Social_Icons/Facebook.png" alt="Facebook">
+            <a href="https://www.instagram.com/smile_youve_won/?hl=en" target="_blank" rel="noopener noreferrer"><img
+                    class="instagram" src="Social_Icons/Instagram.png" alt="Instagram"></a>
+            <img class="twitter" title="Twitter account not linked" src="Social_Icons/Twitter.png" alt="Twitter">
+        </div>
+        <div>
+            <p>Designed & Created by Mark.Best &copy;</p>
+        </div>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+
+</html>
