@@ -16,7 +16,7 @@ header {
 	align-items: center;
 	opacity: 0;
 	filter: blur(2rem);
-	transition: opacity 0.25s, filter 0.25s;
+	transition: opacity 0.5s, filter 0.5s;
 }
 
 h1 {
